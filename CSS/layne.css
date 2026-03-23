@@ -1,0 +1,103 @@
+
+
+/* Container centralizado e limite de largura */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5c004c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 800px; /* largura máxima do conteúdo */
+    margin: 0 auto; /* centraliza */
+    padding: 20px;
+}
+
+/* Botão voltar */
+.botao-voltar {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.botao-voltar:hover {
+    background-color: #444;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Parágrafo de introdução centralizado */
+p.intro {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Outros parágrafos justificados */
+p {
+    font-size: 1em;
+    line-height: 1.6em;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Imagens quadradas e centralizadas */
+img {
+    width: 250px;   /* largura fixa */
+    height: 250px;  /* altura fixa */
+    object-fit: cover; /* mantém proporção e corta excesso */
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px; /* bordas arredondadas */
+}
+
+/* Links "saiba mais" */
+a small {
+    display: block;
+    margin-top: 10px;
+    color: #0af;
+    text-decoration: underline;
+}
+
+a small:hover {
+    color: #09c;
+}
+
+/* Ajustes responsivos para telas menores */
+@media screen and (max-width: 820px) {
+    .container {
+        padding: 15px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p.intro {
+        font-size: 1.1em;
+    }
+}
